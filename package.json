@@ -1,0 +1,30 @@
+{
+  "author": "David Oliveira <d.oliveira@prozone.org>",
+  "name": "httprequire",
+  "description": "A way to include remote node.js modules",
+  "version": "0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidfoliveira/node-httprequire/"
+  },
+  "main": "./lib/proletariat",
+  "bin": {
+    "replaceme": "./bin/manager.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "license": "Copyleft",
+  "engines": {
+    "node": ">=0.10.5"
+  },
+  "keywords": [
+    "job",
+    "queue",
+    "queuing",
+    "processing",
+    "priorities",
+    "distributed",
+    "distribution"
+  ]
+}
