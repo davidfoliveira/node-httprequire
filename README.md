@@ -19,4 +19,4 @@ After that you can require remote modules using `httprequire()`:
 
 # Dependences
 
-This module depends of `httpsync` for performic syncronous http requests and completelly relies on node.js `global` variable and `module` structure. If, on the future, node.js change the structure of these 2 variables, can eventually break `httprequire`.
+This module depends of `httpsync` for performing syncronous http requests and completelly relies on node.js `global` variable and `module` structure. If on the future node.js changes the structure of these 2 variables, can eventually break `httprequire`.
