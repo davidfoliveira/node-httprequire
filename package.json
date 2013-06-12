@@ -7,11 +7,11 @@
     "type": "git",
     "url": "https://github.com/davidfoliveira/node-httprequire/"
   },
-  "main": "./lib/proletariat",
-  "bin": {
-    "replaceme": "./bin/manager.js"
+  "main": "./httprequire",
+  "bin": { }
+  "dependencies": {
+     "httpsync": ">= 0.0.7"
   },
-  "dependencies": {},
   "devDependencies": {},
   "optionalDependencies": {},
   "license": "Copyleft",
@@ -19,12 +19,8 @@
     "node": ">=0.10.5"
   },
   "keywords": [
-    "job",
-    "queue",
-    "queuing",
-    "processing",
-    "priorities",
-    "distributed",
-    "distribution"
+    "http",
+    "require",
+    "remote"
   ]
 }
