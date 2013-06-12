@@ -8,7 +8,7 @@
     "url": "https://github.com/davidfoliveira/node-httprequire/"
   },
   "main": "./httprequire",
-  "bin": { }
+  "bin": { },
   "dependencies": {
      "httpsync": ">= 0.0.7"
   },
