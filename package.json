@@ -2,7 +2,7 @@
   "author": "David Oliveira <d.oliveira@prozone.org>",
   "name": "httprequire",
   "description": "A way to include remote node.js modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/davidfoliveira/node-httprequire/"
