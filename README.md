@@ -1,6 +1,6 @@
 # httprequire: A way to include remote node.js modules
 
-`httprequire` is a module that allows you to require other node.js modules that are accessible through http. It depends of `httpsync`, so unfortunately https is not supported by default.
+`httprequire` is a module that allows you to require other node.js modules that are accessible through http. For syncronous HTTP GET's, it depends of `httpsync`, so unfortunately https is not supported by default.
 
 # Installing
 
@@ -16,6 +16,12 @@ After that you can require remote modules using `httprequire()`:
 
 	var
 	    async = httprequire('http://pz.org.pt/~david/projects/node/tmp/async.js');
+
+If you preffer an asyncronous way of requiring a module:
+
+	httprequire('http://pz.org.pt/~david/projects/node/tmp/async.js',function(async){
+		// stuff
+	});
 
 # Dependences
 
