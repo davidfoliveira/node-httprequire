@@ -1,7 +1,7 @@
 require('../httprequire');
 
 var
-	async = httprequire('http://pz.org.pt/~david/projects/node/tmp/async.js');
+	async = httprequire('http://dl.dropboxusercontent.com/u/368535/async.js');
 //	async = require('async');
 
 async.each(
