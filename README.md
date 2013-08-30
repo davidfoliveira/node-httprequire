@@ -2,9 +2,11 @@
 
 `httprequire` is a module that allows you to require other node.js modules that are accessible through http. For syncronous HTTP GET's, it depends of `httpsync`, so unfortunately https is not supported by default.
 
+
 # Installing
 
 	npm install httprequire
+
 
 # Using
 
@@ -22,6 +24,16 @@ If you preffer an asyncronous way of requiring a module:
 	httprequire('http://pz.org.pt/~david/projects/node/tmp/async.js',function(async){
 		// stuff
 	});
+
+
+# Cache
+
+By default `httprequire()` will cache the results of `http.get()` and will use them if the same URL is required on the future. To bypass the cache, pass a `true` after the URL.
+
+Example:
+
+	async = httprequire('http://pz.org.pt/~david/projects/node/tmp/async.js',true);
+
 
 # Dependences
 

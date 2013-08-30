@@ -32,9 +32,9 @@ var _eval = function(data) {
 
 // Syncronous require
 
-var _syncRequire = function(url) {
+var _syncRequire = function(url,force) {
 
-	if ( _cache[url] != null )
+	if ( !force && _cache[url] != null )
 		return _cache[url];
 
 	var
@@ -58,9 +58,9 @@ var _syncRequire = function(url) {
 
 // Asyncronous require
 
-var _asyncRequire = function(url,handler) {
+var _asyncRequire = function(url,force,handler) {
 
-	if ( _cache[url] != null )
+	if ( !force && _cache[url] != null )
 		return handler(_cache[url]);
 
 	var
@@ -83,8 +83,13 @@ var _asyncRequire = function(url,handler) {
 
 // Set global httprequire function
 
-global.httprequire = function(url,handler) {
+global.httprequire = function(url,force,handler) {
 
-	return handler ? _asyncRequire(url,handler) : _syncRequire(url);
+	if ( typeof force == "function" ) {
+		handler = force;
+		force = false;
+	}
+
+	return handler ? _asyncRequire(url,force,handler) : _syncRequire(url,force);
 
 };
