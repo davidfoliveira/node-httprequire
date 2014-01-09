@@ -19,7 +19,7 @@ var _eval = function(data) {
 			eval(data);
 		}
 		catch(ex){
-			throw new Error("Exception evaluating remote code '"+code+"'");
+			throw new Error("Exception evaluating remote code '"+data+"'");
 		}
 		if ( !_isEmpty(exports) && _isEmpty(module.exports) )
 			module.exports = exports;
