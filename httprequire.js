@@ -24,9 +24,8 @@ var _eval = function(data) {
 		if ( !_isEmpty(exports) && _isEmpty(module.exports) )
 			module.exports = exports;
 	})();
-
+	
 	return module.exports;
-
 };
 
 
@@ -38,13 +37,12 @@ var _syncRequire = function(url,force) {
 		return _cache[url];
 
 	var
-		httpsync = require('httpsync'),
-		req = httpsync.get({url: url}),
-		res = req.end(),
-		data = res.data.toString();
+		request = require('sync-request'),
+		req = request("GET", url),
+		data = req.getBody().toString();
 
 	if ( !data ) {
-		console.log("Got no data. Status was: "+res.status);
+		console.log("Got no data.");
 		return null;
 	}
 
