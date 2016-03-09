@@ -10,7 +10,6 @@
   "main": "./httprequire",
   "bin": {},
   "dependencies": {
-    "httpsync": ">= 0.0.7",
     "request": "^2.69.0",
     "urllib-sync": "^1.1.2"
   },
