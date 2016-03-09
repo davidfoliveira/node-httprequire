@@ -38,3 +38,11 @@ Example:
 # Dependences
 
 This module depends of `httpsync` for performing syncronous http requests and completelly relies on node.js `global` variable and `module` structure. If on the future node.js changes the structure of these 2 variables, can eventually break `httprequire`.
+
+
+changelog
+
+0.1.0
+* replace httpsync with urllib-sync
+* add https support
+* add http header 302 (http redirect) support
