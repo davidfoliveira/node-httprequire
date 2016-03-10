@@ -13,6 +13,12 @@
     "request": "^2.69.0",
     "urllib-sync": "^1.1.2"
   },
+  "contributors": [
+    {
+      "name": "Grant Fong",
+      "email": "grantchiu011101@gmail.com"
+    },
+  ],
   "devDependencies": {},
   "optionalDependencies": {},
   "license": "Copyleft",
