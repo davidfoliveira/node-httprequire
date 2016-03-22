@@ -22,7 +22,9 @@
       "email": "grantchiu011101@gmail.com"
     }
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
   "optionalDependencies": {},
   "license": "Copyleft",
   "engines": {
