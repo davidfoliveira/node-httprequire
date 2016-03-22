@@ -13,6 +13,9 @@
     "request": "^2.69.0",
     "urllib-sync": "^1.1.2"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "contributors": [
     {
       "name": "Grant Fong",
