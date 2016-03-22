@@ -1,6 +1,7 @@
 # httprequire: A way to include remote node.js modules
 
 [![Build Status](https://travis-ci.org/grantchiu011101/node-httprequire.svg?branch=master)](https://travis-ci.org/grantchiu011101/node-httprequire)
+[![Coverage Status](https://coveralls.io/repos/github/grantchiu011101/node-httprequire/badge.svg?branch=master)](https://coveralls.io/github/grantchiu011101/node-httprequire?branch=master)
 
 `httprequire` is a module that allows you to require other node.js modules that are accessible through http/https.
 
