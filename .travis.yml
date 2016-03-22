@@ -1,15 +1,18 @@
 language: node_js
 node_js:
-  - "5.9"
-  - "5"
-  - "5.1"
-  - "4"
-  - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "0.8"
-  - "0.6"
-  - "iojs"
+- '5.9'
+- '5'
+- '5.1'
+- '4'
+- '4.2'
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
+- '0.10'
+- '0.8'
+- '0.6'
+- iojs
+notifications:
+  slack:
+    secure: NAxjnKAzWZXwTKH/vmvfDd3PhSVksY2XijBqW9C8vpRLs4UjQR0CZsAQTvLh+h33jxukud363/lLGkXBiQAellURkQCurpFBQ/Fyf3gn4eXJ+j8e3NP9X7sMF1Sia4ru6Z7iJHqawc/mojO8u3pwIvFAI2huMMNlXKUH62XpwY98UM3svXDd4M0g33Uf1rRORoDugr6o3Oed9pas7AvS7/5X3rZDVL3ucE8JtZLFKwXX7Wbp0VIWR2gEKEXauegEzIPW4z6UIZdbmyicAeXYV+DVmEw0Nno9fOGgm8IQNmTS0F7AKS2amcj5pH5KAJZXSsB0RAgdhErErTOK1jn+Shy9Mx4ACgbRqpLKHi2LppNDEUpyDQPGEKEw7/i21/gLxL7zMzd2xwsWqaXrE2/FropEq60yenw6bcc6Frs/tmMuwtAuuH2ngtfVSOklbZxWfolR0TvGLbBwt+dCdlA0c+OwOtxIz9LS5sq8AhHJTV5uN8SAPJm4RV8vQ+x90xoXK/DA7opt2UweQ78rdUj5NzOor9tMTY3VKiZNmWAd4iGS28fZMP6oH00jg+y0fXdUpyDzbPeT/WDyXOTpw1UxzyVDJlMUpk8UNtYtIUEYwZXWc93b85czNOd9pIYHzeFfXvyQf8oefxS6UQZTfAqPcQG2qOANYAGjQRM0VMKEQdQ=
