@@ -33,14 +33,11 @@ var _eval = function(data) {
 // Syncronous require
 
 var _syncRequire = function(url,force) {
-
 	if ( !force && _cache[url] != null )
 		return _cache[url];
 
 	var
-		httpsync = require('httpsync'),
-		req = httpsync.get({url: url}),
-		res = req.end(),
+		res = require('urllib-sync').request(url);
 		data = res.data.toString();
 
 	if ( !data ) {
@@ -63,20 +60,13 @@ var _asyncRequire = function(url,force,handler) {
 	if ( !force && _cache[url] != null )
 		return handler(_cache[url]);
 
-	var
-		http = require('http'),
-		data = '';
-
-	http.get(url, function(res) {
-		if ( res.statusCode != 200 )
-			return handler(null);
-		res.setEncoding('utf8');
-		res.on('data', function(chunk){ data += chunk; });
-		res.on('end', function(){
-			_cache[url] = _eval(data);
-			return handler(_cache[url]);
-		});
-	}).on('error',function(){handler(null);});
+	var request = require('request') ;
+	request.get({url: url}, function(e, r, b) {
+		if ( r.statusCode != 200)
+			return handler(null) ;
+		_cache[url] = _eval(b) ;
+		return handler(_cache[url]) ;
+	}) ;
 
 };
 

@@ -2,23 +2,36 @@
   "author": "David Oliveira <d.oliveira@prozone.org>",
   "name": "httprequire",
   "description": "A way to include remote node.js modules",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/davidfoliveira/node-httprequire/"
   },
   "main": "./httprequire",
-  "bin": { },
+  "bin": {},
   "dependencies": {
-     "httpsync": ">= 0.0.7"
+    "request": "^2.69.0",
+    "urllib-sync": "^1.1.2"
   },
-  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "contributors": [
+    {
+      "name": "Grant Fong",
+      "email": "grantchiu011101@gmail.com"
+    }
+  ],
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
   "optionalDependencies": {},
   "license": "Copyleft",
   "engines": {
-    "node": ">=0.10.5"
+    "node": ">=4.0.0"
   },
   "keywords": [
+    "require",
     "http",
     "require",
     "remote"

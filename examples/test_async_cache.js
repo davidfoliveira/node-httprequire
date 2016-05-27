@@ -2,15 +2,15 @@ require('../httprequire');
 
 var start = new Date().getTime();
 
-httprequire('http://dl.dropboxusercontent.com/u/368535/async.js',function(async_first){
+httprequire('https://dl.dropboxusercontent.com/u/368535/async.js',function(async_first){
 	console.log("First: ",(new Date().getTime()-start)+" ms");
 
 	start = new Date().getTime();
-	httprequire('http://dl.dropboxusercontent.com/u/368535/async.js',function(async){
+	httprequire('https://dl.dropboxusercontent.com/u/368535/async.js',function(async){
 		console.log("Second: ",(new Date().getTime()-start)+" ms");
 
 		start = new Date().getTime();
-		httprequire('http://dl.dropboxusercontent.com/u/368535/async.js',true,function(async){
+		httprequire('https://dl.dropboxusercontent.com/u/368535/async.js',true,function(async){
 			console.log("Third: ",(new Date().getTime()-start)+" ms");
 
 			async.each(
